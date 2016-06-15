@@ -1,0 +1,32 @@
+
+1.) Write a program which draws a blue circle in the third box
+
+var row, colors, kyrel, return_value, rando;
+
+var initial_state = [ '.', '.', '.', '.', '.' ];
+
+function main(n) {
+
+  moveRight();
+  moveRight();
+  moveRight();
+  useBlue();
+  draw();
+
+}
+
+2.) Write a program where initial state is all blue and erase the third box to blank
+
+
+
+var row, colors, kyrel, return_value, rando;
+
+var initial_state = [ 'b', 'b', 'b', 'b', 'b' ];
+
+function main(n) {
+  
+  moveRight();
+  moveRight();
+  erase();
+
+} 
