@@ -1,0 +1,85 @@
+DAY 2 SOLUTIONS
+
+1. all_blue 
+
+var row, colors, kyrel, return_value, rando;
+
+var initial_state = [ '.', '.', '.', '.', '.' ];
+
+function main(n) {
+	for (var i=0; i<5; i++) {
+      draw();
+      moveRight();
+	}
+
+2. all_first_color
+
+var initial_state = ['b', '.', '.', '.', '.']
+
+function main(n) {
+	for(var j=0; j<5; j++) {
+  	if ( onBlue() ) {
+    	useBlue();
+    	moveRight();
+    	draw();
+  	} else if ( onGreen() ) {
+    	useGreen();
+    	moveRight();
+    	draw();
+  	} else {
+    	draw();
+  	}
+  	moveRight();
+}
+
+
+3. n_in_a_row
+
+var initial_state = [ '.', '.', '.', '.', '.' ];
+
+function main(n) {
+	var n = 5; 
+	useGreen();
+	for(var i=0; i<n; i++) {
+  		draw();
+  		moveRight();
+	}
+
+4. every_even_erase
+
+var initial_state = ['b', 'b', 'b', 'b', 'b']
+
+function main(n) {
+
+for(var i=0; i<n; i++) {
+  	if (i%2 === 0){
+   		erase();
+  	}
+  moveRight();
+}
+
+5. every_odd_erase
+
+var initial_state = ['b', 'b', 'b', 'b', 'b']
+
+function main(n) {
+
+for(var i=0; i<4; i++) {
+  if (i%2 === 1){
+    erase();
+  }
+  moveRight();
+}
+
+6. ever_n_erase
+
+var initial_state = ['b', 'b', 'b', 'b', 'b']
+
+function main(n) {
+	var n = 3;
+		for(var i=0; i<n; i++) {
+    	if (i%n === 0){
+      		erase();
+    	}
+  		moveRight();
+	}
