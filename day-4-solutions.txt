@@ -1,0 +1,61 @@
+## ADVANCED LOOPS & CONDITIONALS
+
+1. bleed_right 
+
+var initial_state = ['.', '.', 'b', '.', '.']
+
+function main(n) {
+
+for (i=0; i<5; i++) {
+  if (onBlue()) {
+    useBlue();
+  }else if (onGreen()) {
+    useGreen();
+  }else {
+    draw();
+}
+    moveRight();
+}
+
+2. invert_colors 
+
+  for (i=0; i<5; i++) {
+  if (onBlue()) {
+    useGreen();
+    draw();
+}  else if (onGreen())  {
+    useBlue();
+    draw();
+} 
+  moveRight();
+}
+
+3. reverse_row 
+var newarray = [];
+
+for (var i = 0; i < initial_state.length; i++) {
+  if ( onBlue()) {
+    newarray[i] = 'b';    
+  }
+  else if ( onGreen()) {
+    newarray[i] = 'g';
+  } 
+  else {
+    newarray[i] = '.';
+  }
+    moveRight();
+}
+
+for (var i = 0; i < initial_state.length; i++) {
+  if ( newarray[i] === 'b') {
+        useBlue();
+        draw();    
+  }
+  else if ( newarray[i] === 'g') {
+        useGreen();
+        draw(); 
+  } else{
+        erase(); 
+  }
+    moveLeft();
+}
