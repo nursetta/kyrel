@@ -1,0 +1,34 @@
+## MORE LOOPS & CONDITIONALS
+
+1. move_the_blue_dot_one_to_the_right 
+
+for(var i=0; i<5; i++) {
+  if( onBlue() ) {
+    erase();
+    moveRight();
+    useBlue();
+    draw();
+  }
+
+  moveRight();
+}
+  
+2. delete_before 
+
+for(var i=0; i<5; i++) {
+  if ( onBlue() ) {
+    moveLeft();
+    erase();
+    moveRight();
+  }
+  moveRight();
+}
+
+3. pull_blues_right 
+
+
+ 
+4. pull_blues_left - [solution](/challenges/solutions/pull_blues_left.js)
+ 
+  * start:  [ '.', 'b', 'b', '.', 'b' ]
+  * finish: [ 'b', 'b', 'b', '.', '.' ]
